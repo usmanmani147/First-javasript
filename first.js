@@ -947,4 +947,4 @@
 //     console.log(val ** 2);
 //  }
 // arr.forEach(mani)
-
+sjfsla;lf
