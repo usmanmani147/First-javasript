@@ -26,7 +26,7 @@
 // let name;
 // console.log(name);
 
-// null example                 paused
+// null example                 null means empty object
 
 // bigInt example                       bigint is wrong                 BigInt is correct
 
@@ -38,7 +38,7 @@
 // let y = Symbol(`hy_usman`)
 // console.log(y);
 
-//  types of non-primitive data in javaSript               (objects----->    arrays,function)
+//  types of non-primitive data in javaSript               (objects, arrays, function)
 
 // Object                      collection of values             the values in object is called key value
 
@@ -882,14 +882,11 @@
 //   console.log(val);
 // });
 
-
 // arr.forEach((val) =>{
 //     console.log(val)
 // })
 
-
 // below is the example of forEach loop, he will not work with string only with arry understan!.
-
 
 // let str = "usmanmani"
 
@@ -919,11 +916,9 @@
 
 // higher order function / method are methods that either take another function as a paramater inside them or they  return the another function as there output.
 
-
 // question for solving
 
 // For a given arry of numbers, print the square of each value by using forEach loop.
-
 
 // let arr = [1,2,3,4,5,]
 
@@ -940,8 +935,6 @@
 //     console.log(val **2)
 // })
 
-
-
 // let arr = [1,2,3,4,5]
 //  let mani = (val) =>{
 //     console.log(val ** 2);
@@ -950,10 +943,7 @@
 
 //  map method (map method is very similar with forEach loop but the difference is map method give us a new arry while the forEach method only change the arry )
 
-
 //  map method (creates a new array with the results of some operation. The value its callback returns are used to form new arry)
-
-
 
 // Array.map(callbackFnx(value, index, arry))
 
@@ -961,21 +951,16 @@
 //     return val * 2 ;
 // })
 
-
 // filter method
 
-// we are now finding the even num in arr by using filter method 
-
+// we are now finding the even num in arr by using filter method
 
 // let arr = [1,2,3,4,5,6,7,8,9];
-
 
 // let evenArr = arr.filter((val)=>{
 //     return val % 2 === 0;
 // })
 // console.log (evenArr);
-
-
 
 // reduce method (performs some operations & reduces the array to a single value. It returns that single value)
 
@@ -985,7 +970,6 @@
 // })
 
 // console.log (sum);
-
 
 // now we are finding the largest val in array
 
@@ -999,10 +983,7 @@
 
 // Question solving
 
-
 // we are giving array of marks of students. Filter out the marks of students that scored 90+
-
-
 
 // let arr = [22,45,67,87,99,97,56,96,89];
 
@@ -1011,12 +992,9 @@
 // })
 // console.log(topper);
 
-
-
 // Question solving
 
-
-// Take a number n as input from the user. Create the the array from 1 to n. 
+// Take a number n as input from the user. Create the the array from 1 to n.
 
 // use the reduce method to calculate sum of all numbers in the array.
 
@@ -1044,7 +1022,6 @@
 //     return previous * current;
 // })
 
-
 // console.log( factroial);
 
 // DOM (Document Object Model)
@@ -1052,11 +1029,52 @@
 
 // Window Object => the window object an open window in a browser. it is browser's object not javascript and is automatically created by browser.it is a global object with lots of properties and methods.
 
+// html ko hum javacript main acess kr sakty hain or html k sary element javacript main a kr aik object main convert ho jaty hain or us object ko hum document kehty hain.document object, window object main available hota hy.
 
+// console.dir ---> is used to print the object (console.dir is also a part of window object)
 
+// document is the representation of html and we can also say document is a model.
 
+// we can also say, node is a object and object is a node.
 
+// run time per jub user website per ho hum javascript k through dynamically changes kr sakty han html main.
+// or hum nay color bhe change kia hy example k liy.
+// document.body.style.background = `green`     (try it with console in inspect )
 
+// DOM manipulation
 
+// let h1 = document.getElementById(`mani`);
+// console.log(h1)
 
+// let h1 = document.getElementsByClassName(`mano`);
+// console.dir(h1);
 
+// let p = document.getElementsByTagName(`p`);
+// console.dir(p);
+
+// query selector (query selector humary liy node list return krta hy)
+// query selector say hum id, class, tag sub ko return kr sakty hain or is ko he use krna chahey.
+
+// below example main only first element/tag show ho ga
+
+// jo below example hy is main hum nay tag ko access kia hy.hum ko maloom hy hum tag,id,class access kr sakty hain.
+
+// let abc = document.querySelector(`p`);
+// console.dir(abc);
+
+// below example main all elements/tag show ho gay.
+
+// let abc= document.querySelectorAll(`p`);
+// console.dir(abc);
+
+// ab hum below example main class ko access karin gay.
+
+// let abc = document.querySelector(`.mano`);
+// console.dir(abc);
+
+// ab hum nay id ko access kia hy look below example.
+
+// let abc = document.querySelector(`#mani`);
+// console.dir(abc);
+
+// properties topic.
