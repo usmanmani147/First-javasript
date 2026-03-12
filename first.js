@@ -948,3 +948,115 @@
 //  }
 // arr.forEach(mani)
 
+//  map method (map method is very similar with forEach loop but the difference is map method give us a new arry while the forEach method only change the arry )
+
+
+//  map method (creates a new array with the results of some operation. The value its callback returns are used to form new arry)
+
+
+
+// Array.map(callbackFnx(value, index, arry))
+
+// let newArr = arr.map((val)=>{
+//     return val * 2 ;
+// })
+
+
+// filter method
+
+// we are now finding the even num in arr by using filter method 
+
+
+// let arr = [1,2,3,4,5,6,7,8,9];
+
+
+// let evenArr = arr.filter((val)=>{
+//     return val % 2 === 0;
+// })
+// console.log (evenArr);
+
+
+
+// reduce method (performs some operations & reduces the array to a single value. It returns that single value)
+
+// let arr = [1,2,3,4,5];
+// let sum =arr.reduce((previous,current)=>{
+//     return previous + current;
+// })
+
+// console.log (sum);
+
+
+// now we are finding the largest val in array
+
+// let arr = [1,2,3,4,5,6,7,8];
+
+// let greater =arr.reduce ((previous, current)=>{
+//     return previous > current ? previous : current;
+// })
+
+// console.log(greater);
+
+// Question solving
+
+
+// we are giving array of marks of students. Filter out the marks of students that scored 90+
+
+
+
+// let arr = [22,45,67,87,99,97,56,96,89];
+
+// let topper = arr.filter((val)=>{
+//     return val > 90;
+// })
+// console.log(topper);
+
+
+
+// Question solving
+
+
+// Take a number n as input from the user. Create the the array from 1 to n. 
+
+// use the reduce method to calculate sum of all numbers in the array.
+
+// use the reduce method to calculate product of all numbers in the array.
+
+// part one
+// let n = prompt (`n number from user =`);
+
+// arr = [];
+
+// for (let i = 1; i <= n; i ++){
+//     arr [i -1] = i;
+// }
+// console.log(arr);
+
+// // part two
+// let sum = arr.reduce((sum,current)=>{
+//     return sum + current;
+// })
+
+// console.log(sum);
+
+// // part three find product factroial  (dont use for biger num, will come error.don't use factorial for biger number)
+// let factroial = arr.reduce((previous , current)=>{
+//     return previous * current;
+// })
+
+
+// console.log( factroial);
+
+// DOM (Document Object Model)
+// what is ODM?---> when the page is loaded, the browser creates a document object model of the page.
+
+// Window Object => the window object an open window in a browser. it is browser's object not javascript and is automatically created by browser.it is a global object with lots of properties and methods.
+
+
+
+
+
+
+
+
+
