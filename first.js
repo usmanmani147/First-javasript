@@ -1052,6 +1052,8 @@
 // let p = document.getElementsByTagName(`p`);
 // console.dir(p);
 
+// document.body.childNodes[3].innerText = `abcd`;
+
 // query selector (query selector humary liy node list return krta hy)
 // query selector say hum id, class, tag sub ko return kr sakty hain or is ko he use krna chahey.
 
@@ -1078,3 +1080,56 @@
 // console.dir(abc);
 
 // properties topic.
+
+// tagName:     returns tags for element nodes
+
+// example tagName
+
+// let abc = document.querySelector(`div`);
+// console.dir(abc);
+// console.dir(abc.tagName)
+
+// innerText:   returns the text content of the element and all its children
+
+// example innertext
+
+// let div = document.querySelector(`div`);
+// console.dir(div);
+// console.dir(div.innerText);
+
+// innerHTML:   returns the plain text or HTML contents in the element
+
+// example innerHTML
+
+// let div = document.querySelector(`div`);
+// console.dir(div);
+// console.dir(div.innerHTML);
+
+// textContent: teturns textual content even for hidden elements
+
+// example textContent
+
+// let div = document.querySelector(`div`);
+// console.dir(div);
+// console.dir(div.textContent);
+
+// tyes of nodes        1.text node     2.comment node      3.element node
+
+// lets practice
+
+// Create a H2 heading element with text `hello javaScript`. Append `from apna college students` to this text using JS.
+
+// create 3 divs with common class name `box` access them and add some unique text to each of them.
+
+// let h2 = document.querySelector(`h2`);
+// console.dir(h2.innerText);
+// h2.innerText = h2.innerText + `apna collage students`;
+
+// document.querySelector(`div`).children;
+
+// document.querySelector(`div`).firstChild;
+
+// document.querySelector(`div`).lastChild;
+
+// let divs = document.querySelectorAll(`div`);
+// console.dir(divs);
