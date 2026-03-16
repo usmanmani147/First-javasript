@@ -28,7 +28,7 @@
 
 // null example                 null means empty object
 
-// bigInt example                       bigint is wrong                 BigInt is correct
+// BigInt example     (shows (n) with BigInt value)       bigint is wrong         BigInt is correct
 
 // let x = BigInt(`123`);
 // console.log(x);
@@ -287,7 +287,7 @@
 
 // Ternary Operators        condition? true output: false output;      (used with 3 operands)
 
-// if condition will be true then true output will work and if condition will be false then false outputworks.
+// if condition will be true then true output will work and if condition will be false then false output will works.
 
 // let age = prompt("Enter Age to Check Age")
 
@@ -303,7 +303,7 @@
 
 // (types of loops ---------------------------------------- )
 
-// there are three statements/conditions in for loop in the example given below the
+// there are three statements/conditions in for loop in the example given below.
 
 // (let count = 1) is the first statement               (also known as the initialize condition/statement)
 
@@ -411,7 +411,7 @@
 // (for-in loop)          (used for object and arrays and the key of object for loop)
 //                        (for in loop hum ko object ki key print kr k deta hy )
 
-// for (let key in objVar){
+// for (let i in objVar){
 //         do some work
 // }
 
@@ -423,9 +423,11 @@
 
 // };
 
-// for (let key in student){
-//      console.log("key=", key, "value =", student[key]);
-//        let a = `key = ${key} value = ${student[key]}`;
+// for (let i in student){
+
+//      console.log("i=", i, "value =", student[i]);
+
+//        let a = `i = ${i} value = ${student[i]}`;
 //         console.log(a);
 // }
 
@@ -453,7 +455,7 @@
 // }
 // console.log("congratulations you have enterd the right game number");
 
-// string is a sequence of characters used to represent Text
+// string is a sequence of characters, that is used to represent the Text.
 
 // (the method to calculate length of string)
 
@@ -471,7 +473,7 @@
 // (string interpolation= jo hum template literals ko use krty hoy jo expressions
 //  ya placeholders add krty hain us ko kehty hn string interpolation.)
 
-//  $ yeh variable k liy hoga.  no space between $ sign and {} these brackets ok    ${}
+//  $ yeh variable k liy hoga.  no space between $ sign and {} these brackets ok    ${} like this
 
 // let obj ={
 //     item : "pen",
@@ -1041,6 +1043,8 @@
 // or hum nay color bhe change kia hy example k liy.
 // document.body.style.background = `green`     (try it with console in inspect )
 
+// ===============================================================================================
+
 // DOM manipulation
 
 // let h1 = document.getElementById(`mani`);
@@ -1133,3 +1137,115 @@
 
 // let divs = document.querySelectorAll(`div`);
 // console.dir(divs);
+
+
+// DOM Manipulation     insert elements (first create and then add/insert the element) 
+
+// .getAttribute (attr);            to get the attribute value.
+
+// .setAttribute (attr, value)      to set the attribute value.     
+
+// let el = document.createElement(`div`)
+
+// node.append(el)      adds at the end of node     (inside)
+// node.prepend(el)     adds at the start of node   (inside)
+// node.before(el)      adds before the node        (outside)
+// node.after(el)       adds after the node         (outside)
+// node.remove()        removes the node
+
+// first we create any element for example button, para, link, heading etc, then we will use the above methods to insert the element.
+
+
+// example given below.
+
+// let we create one button by using javasript and then we will add them to the javascript.
+
+// let button = document.createElement(`button`);
+// button.innerText = `click me!`
+// console.log(button);
+
+// // now button has be created,now we will insert to the brower by using DOM Manipulation methods as we dicussed above. but we first select with query selector where to insert the button.
+
+// // suppose we want to insert the button to the third div at the start and also at the end of third div.
+
+// let div3 = document.querySelector(`.third`);
+// div3.append(button);
+
+// now button has been added to the third div at the end postion.
+
+// let h1 = document.createElement(`h1`);
+// h1.innerText = `this is my first para adding to javascript without using html file`;
+// console.log(h1);
+// // now we add this para to the first div by selecting div class. but first we select with query selector.
+
+
+// let div1 = document.querySelector(`.first`);
+// div1.prepend(h1);
+
+// question solving
+
+// let button = document.createElement(`button`);
+// button.innerText = `click me!`;
+// button.style.color = `white`;
+// button.style.backgroundColor = `red`;
+// button = document.querySelector(`body`).prepend(button);
+// let para = document.querySelector (`p`);
+
+// =======================================================================================================
+
+// Events in javaScript     (The change in the state of an object is known as an Event)
+// Events are fired to notify code of `interesting changes` that may effect code execuation.
+
+// creating a button that change the mode from light to dark and vice versa (night 1:39 AM)
+
+
+
+
+
+// let btn = document.querySelector(`#btn`);
+
+// let mode = `light`
+
+// btn.addEventListener(`click`, ()=>{
+
+//     if (mode === `light`){
+
+//         mode = `dark`;
+//         document.querySelector(`body`).style.backgroundColor = `black`;
+//     }else {
+//         mode = `light`;
+//         document.querySelector(`body`).style.backgroundColor = `white`;
+
+//     }
+//     console.log(mode);
+// });
+
+
+
+
+// // now we are using css for changing colors.
+
+// let btn = document.querySelector(`#btn`);
+
+// let mode = `light`
+
+// let body = document.querySelector(`body`);
+
+// btn.addEventListener(`click`, ()=> {
+
+//     if (mode === `light`){
+
+//         mode = `dark`;
+//         body.classList.add(`dark`);
+//         body.classList.remove(`white`);
+//     }else {
+//         mode = `light`;
+//         body.classList.add(`white`);
+//         body.classList.remove(`dark`);
+//     }
+//     console.log(mode);
+// });
+
+
+
+

@@ -1,3 +1,17 @@
-h1{
-    background-color: orange;
+#btn{
+    color: orange;
+    background-color: rgb(221, 172, 23);
+    height: 100px;
+    width: 100px;
+}
+
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.white {
+    background-color: white;
+    color: black;
 }
