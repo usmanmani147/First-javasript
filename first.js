@@ -151,7 +151,7 @@
 
 // ==========================================================================================================
 
-//Asignment operators       (means to assign values to the variables)  work with 2 operands
+//Arthmetic Asignment operators       (means to assign values to the variables)  work with 2 operands
 
 // let a = 4;
 
@@ -1138,12 +1138,11 @@
 // let divs = document.querySelectorAll(`div`);
 // console.dir(divs);
 
-
-// DOM Manipulation     insert elements (first create and then add/insert the element) 
+// DOM Manipulation     insert elements (first create and then add/insert the element)
 
 // .getAttribute (attr);            to get the attribute value.
 
-// .setAttribute (attr, value)      to set the attribute value.     
+// .setAttribute (attr, value)      to set the attribute value.
 
 // let el = document.createElement(`div`)
 
@@ -1154,7 +1153,6 @@
 // node.remove()        removes the node
 
 // first we create any element for example button, para, link, heading etc, then we will use the above methods to insert the element.
-
 
 // example given below.
 
@@ -1178,7 +1176,6 @@
 // console.log(h1);
 // // now we add this para to the first div by selecting div class. but first we select with query selector.
 
-
 // let div1 = document.querySelector(`.first`);
 // div1.prepend(h1);
 
@@ -1198,10 +1195,6 @@
 
 // creating a button that change the mode from light to dark and vice versa (night 1:39 AM)
 
-
-
-
-
 // let btn = document.querySelector(`#btn`);
 
 // let mode = `light`
@@ -1220,10 +1213,7 @@
 //     console.log(mode);
 // });
 
-
-
-
-// // now we are using css for changing colors.
+// now we are using css for changing colors. In this case the styling file is css and connected with js by adding (body.classList.add(`dark/white`))
 
 // let btn = document.querySelector(`#btn`);
 
@@ -1246,6 +1236,65 @@
 //     console.log(mode);
 // });
 
+let userScore = 0;
+let computerScore = 0;
 
+const choices = document.querySelectorAll(`.choice`);
+const msg = document.querySelector(`#msg`);
+const userScorePara = document.querySelector(`#user-score`);
+const computerScorePara = document.querySelector(`#computer-score`);
 
+const genCompChoice = () => {
+  const options = [`rock`, `paper`, `scissors`];
+  const randomidx = Math.floor(Math.random() * 3);
+  return options[randomidx];
+};
 
+const drawGame = () => {
+  msg.innerText = `Game was Draw. Play Again!`;
+  msg.style.backgroundColor = `#081b31`;
+};
+
+const showWinner = (userWin, compChoice, userChoice) => {
+  if (userWin) {
+    userScore++;
+    userScorePara.innerText = userScore;
+    msg.innerText = `You Win! your ${userChoice} Beats ${compChoice}`;
+    msg.style.backgroundColor = `green`;
+  } else {
+    computerScore++;
+    computerScorePara.innerText = computerScore;
+    msg.innerText = `You lost. ${compChoice} Beats your ${userChoice}`;
+    msg.style.backgroundColor = `red`;
+  }
+};
+
+const playGame = (userChoice) => {
+  const compChoice = genCompChoice();
+
+  if (userChoice === compChoice) {
+    // draw Game
+    drawGame();
+  } else {
+    let userWin = true;
+
+    if (userChoice === `rock`) {
+      //sciossrs , paper
+      userWin = compChoice === `paper` ? false : true;
+    } else if (userChoice === `paper`) {
+      // rock , scissors
+      userWin = compChoice === `scissors` ? false : true;
+    } else {
+      //paper , rock
+      userWin = compChoice === `rock` ? false : true;
+    }
+    showWinner(userWin, compChoice, userChoice);
+  }
+};
+
+choices.forEach((choice) => {
+  choice.addEventListener(`click`, () => {
+    const userChoice = choice.getAttribute(`id`);
+    playGame(userChoice);
+  });
+});
