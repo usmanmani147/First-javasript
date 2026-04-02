@@ -1,4 +1,4 @@
-// welcom to javaScript
+// welcome to javaScript
 
 // java script is a programing language we will use it to give instructions to the computer.
 
@@ -6,37 +6,51 @@
 
 // data types in javaScript primitive--->     Number, string, boolean, undefined, null, BigInt, Symbol
 
+// ==================================================================================================
+
 // number example
 
 // let a = 5;
 // console.log(a);
 
+// ==================================================================================================
+
 // string example
 
 // let fullName = `usmanghani`
 // console.log( fullName);
-
+// ==================================================================================================
 // boolean example
 
 // let isFollow = true;
 // console.log(isFollow);
+
+// ==================================================================================================
 
 // undefined example
 
 // let name;
 // console.log(name);
 
+// ==================================================================================================
+
 // null example                 null means empty object
+
+// ==================================================================================================
 
 // BigInt example     (shows (n) with BigInt value)       bigint is wrong         BigInt is correct
 
 // let x = BigInt(`123`);
 // console.log(x);
 
+// ==================================================================================================
+
 // Symbol example                       S capital use hoga  small s will be an error
 
 // let y = Symbol(`hy_usman`)
 // console.log(y);
+
+// ==================================================================================================
 
 //  types of non-primitive data in javaSript               (objects, arrays, function)
 
@@ -51,7 +65,9 @@
 //         isPass  :true,
 // }
 
-//how to access a single key from object        there are two method given below
+// ==================================================================================================
+
+// how to access a single key from object        there are two method given below
 
 // key access example no 1
 
@@ -77,6 +93,8 @@
 
 // According to my mind number 2 example is easy rather than 1 what you say!
 
+// ==================================================================================================
+
 // how to change the value of any object key for example how to change name and age
 
 // const variable ko change nh kr sakty lakin const object ki key ko change kr sakty hain
@@ -92,9 +110,11 @@
 
 // console.log(student.name);
 
-// student.age= 45
+// student.age= 45;
 
 // console.log(student.age);
+
+// ==================================================================================================
 
 // let                  we can update
 
@@ -102,9 +122,9 @@
 
 // const object         we can update the key of object
 
-// operatores in javaScrip=================================================================================
+// operatores in javaScript=================================================================================
 
-//Artimetic Operators                           used with 2 operands a & b
+// Artimetic Operators                           used with 2 operands a & b
 
 // (+ - * /)
 
@@ -128,7 +148,7 @@
 
 // =========================================================================================================
 
-//unary operators               unary operators used with 1 operand      with a      with b     with c
+// unary operators               unary operators used with 1 operand      with a      with b     with c
 
 // increment symbol ++ and decrement --         a+1 = a++       a-1 = a--
 
@@ -151,7 +171,7 @@
 
 // ==========================================================================================================
 
-//Arthmetic Asignment operators       (means to assign values to the variables)  work with 2 operands
+// Arthmetic Asignment operators       (means to assign values to the variables)  work with 2 operands
 
 // let a = 4;
 
@@ -172,11 +192,25 @@
 // ==========================================================================================================
 
 // comparison operators                 always give the result in boolean value
-
+// >
+// <
+// >=
+// <=
 // ==   is equal to
 // !=   is not equal to
 // ===  is equal to & type
 // !==  is not equal to & type
+
+// | Operator | Meaning            | Checks       | Example     | Result |
+// | -------- | ------------------ | ------------ | ----------- | ------ |
+// | `==`     | Equal (loose)      | Value only   | `"5" == 5`  | true   |
+// | `===`    | Equal (strict)     | Value + Type | `"5" === 5` | false  |
+// | `!=`     | Not equal (loose)  | Value only   | `"5" != 5`  | false  |
+// | `!==`    | Not equal (strict) | Value + Type | `"5" !== 5` | true   |
+// | `>`      | Greater than       | Value        | `5 > 3`     | true   |
+// | `<`      | Less than          | Value        | `5 < 3`     | false  |
+// | `>=`     | Greater or equal   | Value        | `5 >= 5`    | true   |
+// | `<=`     | Less or equal      | Value        | `3 <= 5`    | true   |
 
 // ===========================================================================================================
 
@@ -214,48 +248,92 @@
 
 // conditional statement        to implement some condition in the code
 
-// Types of statements ( if ,  if-else  , else=if )
+// Types of statements ( if , else if )
 
+// if statement, is only use to check the statement, if statement will true is will work otherwise will not work.
 // let age = 18;
 
 // if (age >= 18){
 //     console.log("you can vote")
 // };
 
-// if (age < 18){
+// in above example if age will be less then 18 the if statement will not work.
+
+// let age = 18;
+
+// if (age <= 17){
 //     console.log("you CANNOT vote")
 // };
 
-// even and odd
+// in above example is age will more then 18 the if statement will not work
 
-// let num = 10;
+// now we are making two options statement in which we show first and secod statement(we can use multiple statements with this method) as we mentioned above >18 and <17 wala.
+// for this method we will use if else statement, in this statement we have more then one options for excution.
+
+// let age = prompt(`enter the age to check vote status`);
+// if (age >=18 ){
+//     console.log(`you can vote`)
+// }else{
+//     console.log(`you cannot vote`)
+// }
+
+// in above example we use both options if the age will more the 18 then we can vote otherwise we can't vote.
+
+// else if hamesha if ke baad aata hai, aur else se pehle.
+// else optional hai, aur last mein aata hai.
+// else if ko alag likhte hain, elseif ya else: if nahi (JavaScript mein)
+
+// now in the below example we will use more then two statments by using else if method.
+
+// const age = prompt(`enter the age `);
+// if (age >=60){
+//     console.log(`you can go home`)
+// }else if (age >=18){
+//     console.log(`go to the europe`)
+
+// }else if (age <=17){
+//     console.log(`ready for the europe`)
+// }
+
+// know we are using even and odd game
+
+// let num = Number(prompt(`enter num to check even or odd`));
+// // let num = 10;
 
 // if (num % 2 === 0){
 
 //          console.log ( num , " is even");
-//}  else {
+// }  else {
 //          console.log ( num , " is odd");
-//        }
+// }
 
-// following syntax main jo (let mode = ......) ki value kisi say match nh
-// kary gi to else wala syntax kam kary ga means k white show ho ga nh to
-// if, else if , else, is main say select ho jay ga mode.
+// ===============================================================================================
 
-// let mode = "white";
+// Ternary Operators        condition? true output: false output;      (used with 3 operands)
 
-// let color ;
+// if condition will be true then true output will work and if condition will be false then false output will works.
 
-// if (mode === "dark");{
-//     color = "black";
-// }else if (mode === "blue");{
-//     color = "blue";
-// }else if (mode === "pink");{
-//     color = "pink";
-// }else {
-//     color = "white";
-// };
+// ===============================================================================================
 
-// console.log(color);
+
+// let age = prompt("Enter Age to Check Age")
+
+// let result =  age >= 18 ? "adult" : "not adult";
+
+// console.log (result);
+
+// ===============================================================================================
+
+// Qs1. Get user to input a number using prompt(“Enter a number:”). Check if the number is
+
+// a multiple of 5 or not.
+
+// let num = Number (prompt(`enter the num to check num is multiple of 5 or not`));
+
+// let Result = num %5 ===  0 ? `multiple of 5`: `not a multiple of 5`;
+// console.log(Result);
+
+// ===============================================================================================
 
 // let num =  prompt("enter the number");
 
@@ -265,57 +343,71 @@
 // console.log(num , "is not multiple of 5")
 // };
 
-// let score = prompt("Enter Num to check grade (0-100)")
+// ===============================================================================================
+
+
+// let mode = "white";
+
+// let color ;
+
+// if (mode === "dark"){
+//     color = "black";
+// }else if (mode === "blue"){
+//     color = "blue";
+// }else if (mode === "pink"){
+//     color = "pink";
+// }else {
+//     color = "white";
+// }
+
+// console.log(color);
+
+// ===============================================================================================
+
+
+// let score = Number(prompt("Enter Num to check grade (0-100)"));
 
 // let grade ;
 
 // if (score >= 90 && score <= 100) {
-//     grade = "A";
-// }  else if (score <= 89 && score >= 70){
-//     grade = "B";
-// } else if (score  <= 69 && score >= 60){
-//     grade = "C";
-// } else if (score  <= 50 && score >= 59){
-//     grade = "D";
-// } else if (score  <= 0  && score >= 49){
-//     grade = "F";
+//     grade = `A`;
+// }else if (score >= 70 && score <= 89){
+//     grade = `B`;
+// }else if (score >= 69 && score <= 88){
+//     grade = `C`;
+// }else if (score >= 49 && score <= 68){
+//     grade = `D`;
+// }else {
+//     grade = `F`;
 // }
 
 // console.log( "According to your scores, your grade is :", grade);
 
-// =========================================================================================================
-
-// Ternary Operators        condition? true output: false output;      (used with 3 operands)
-
-// if condition will be true then true output will work and if condition will be false then false output will works.
-
-// let age = prompt("Enter Age to Check Age")
-
-// let result =  age >= 18 ? "adult" : "not adult";
-
-// console.log (result);
-
 // ==========================================================================================================
 
-// looooooooooooooooooops   loops are used to execute the piece of code again & again.
+// loops  →  loops are used to execute the piece of code again & again.
 
 // (jo variables hum loop main use kety hain wo sirf loop tak he rahy gay un ka loop say baher koi value hogi)
 
 // (types of loops ---------------------------------------- )
 
-// there are three statements/conditions in for loop in the example given below.
+// Types of loop and the condition of loop is below.every loop has it own condition.
 
-// (let count = 1) is the first statement               (also known as the initialize condition/statement)
+// for loop → fixed loop (count pata ho) syntax given below
 
-// (count <= 5 ; ) is the second statement              (also known as stopping condition/statement)
-
-// (count ++ ) this is the third statement              (aslo known as updation condition/statement)
-
-// (for loop)  type             (jo kam for loop say ho sakta hy wo while loop say bhe ho sakta hy)
-
-// for (let count = 1; count <= 5; count ++){
-//     console.log(`mani`);
+// for (let i = 1 ; i <= 5 ; i ++){
+// console.log (`mani`);
 // }
+
+// ab uper wali example main hum nay mani string ko 5 bar print kerwaya hy for loop ko use kr kay.
+
+// console.log(`mani`);
+// console.log(`mani`);
+// console.log(`mani`);
+// console.log(`mani`);
+// console.log(`mani`);
+
+// is tarha bhe 5 bar kerwa sakty thy lakin aik small piece of code say easy ho gaya run krana.
 
 // calculate sum of 1 to 5
 // let sum = 0;
@@ -326,7 +418,18 @@
 
 // console.log(sum);
 
+// another example of for loop.
+
 // calculate the sum of 1 to 100
+
+// let sum = 0;
+// for (let i = 1; i <= 100 ; i ++ ){
+//         sum = sum + i;
+// }
+// console.log(`sum=`,sum)
+
+// calculate the sum of 1 to 100
+
 
 // let sum = 0;
 // let n = 100;
@@ -335,7 +438,30 @@
 // }
 // console.log(`sum=`,sum)
 
-// (infinite loop)  type
+// while loop → condition based syntax given below
+
+// let i = 1;
+// while (i <= 5){
+// console.log(`mani${i}`);
+// i++;
+// }
+
+// jo hum nay upper wali example main for loop say kam kia tha wohi ab while loop say kia hy.
+// hum nay let i jo lia tha wo hum change bhe kr sakty hain matlab abcd kuch bhe okay!.
+
+// do-while → at least 1 baar chalega syntax given below
+
+// let i = 1;
+// do {
+//     console.log(`mani ${i}`);
+//     i ++;
+// } while (i <= 5);
+
+// ab use kia do while loop or wohi same kam kia hum nay bas difference itna hy k variable lany k bad `do` main type kia kam jis per loop lagana tha or updation condition set ki.
+// or while main condition likh di is main code aik barr zaror run go q k condition bad main likha hy or jis per loop lagana tha wo first main likha hy.
+
+
+// (infinite loop)  type  (never ending loop)
 
 // 2. infinite loop (hint never use in real web ok!)
 // example given below of infinite loop
@@ -344,94 +470,58 @@
 //         console.log(`i=`,i);
 // }
 
-// (while loop)    type (is main hum initialize while say phlay karty hain or stoping condition while main or updation bhe while loop main he kerty hain example given below.)
+// ========================================================================================================
 
-//  (jo kam while loop say ho sakta hy wo for loop say bhe ho sakta hy)
+// for-of loop → array values
 
-// this is the example of while loop.
-
-// let i = 1;
-
-// while (i <=5){
-//         console.log(i)
-//         i ++;
-// }
-
-// this is the example of for loop
-
-// for (let i = 1; i <=5 ; i ++){
-//         console.log(i)
-// }
-
-// =========================================================================================================
-
-//( do while loop)      (one time code will execute weather stopping condition is true or false )
-
-// do while loop main stoping condition end per hoti hy jub k while loop main start per
-
-// example of do while loop.
-
-// let i = 10;
-// do{
-//     console.log(`usman`);
-//     i++;
-// }while (i <= 5);
-
-// example of while loop
-
-// let i = 1;
-
-// while (i <= 5 ){
-//         console.log(`usman`)
-//         i ++;
-// }
-
-// ==========================================================================================================
-
-// ( for-of loop ) (if somebody wants to print each letter of string then we can use for-of loop)
+// ( for-of loop ) (if somebody wants to print each letter of string/Array then we can use for-of loop)
 
 // for of loop is used for string and arrays.this loop can work with the single value/index of string/arrays.
 
-// for(let val of strVar){
-//         do some work
+// let str = `usman`;
+// for(let character of str){
+//         console.log(character);
 // }
+
 
 // let str = "usmanghani";
 // let size = 0;
 
-// for (let val of str){
-//     console.log("val =", val);
+// for (let length of str){
+//     console.log("length =", length);
 //     size ++;
 // }
-
 // console.log(size);
 
-// ( size "0" ki place per  jo likho gy wo or string ki length / size /character main add ho jay ga e.g. usmanghani main 10 chararcter hain or 0 ki jaga phlay he 10 likho gy to console main size 20 ayga.)
+// ==========================================================================================================
+
+// for-in → object keys
 
 // (for-in loop)          (used for object and arrays and the key of object for loop)
 //                        (for in loop hum ko object ki key print kr k deta hy )
 
-// for (let i in objVar){
+// for (let i in obj){
 //         do some work
 // }
 
-// let student =  {
-//     name: "usman",
-//     age:33,
-//     gpa : 7.5,
-//     isPass: true,
+// const studentObject =  {
+
+//             name: "usman",
+//             age:33,
+//             gpa : 7.5,
+//             isPass: true,
 
 // };
 
-// for (let i in student){
+// for (let value in studentObject){
 
-//      console.log("i=", i, "value =", student[i]);
+//     //  console.log( value , studentObject[value]);
 
-//        let a = `i = ${i} value = ${student[i]}`;
+//        let a = `i = ${value} value = ${studentObject[value]}`;
 //         console.log(a);
 // }
 
-//
+// ==========================================================================================================
 
 // print num from 0 to 100 (even and odd)        by using(for-loop)type
 
@@ -443,9 +533,13 @@
 //     }
 // };
 
-// (question solving)           (by using prompt with while loop)
+
+//                              (question solving)
+
+//                              (by using prompt with while loop)
 //                              (prompt say jo be return ata hy wo aik string hota hy )
-//                              (is example main aik point hy or wo samjhna zarori hy )
+
+
 // let gameNum = 25;
 
 // let userNum = prompt("guess the game num :")
@@ -455,13 +549,23 @@
 // }
 // console.log("congratulations you have enterd the right game number");
 
+// ==========================================================================================================
+
 // string is a sequence of characters, that is used to represent the Text.
 
 // (the method to calculate length of string)
 
-// let str = "usmanghanimanijani"
+// let str = "usmanmanighanimanijani"
 
 // console.log(str.length)
+
+// let str = `usmanmanighanimanijani`
+// size = 0;
+// for (length of str ){
+//     console.log(length);
+//     size ++;
+// }
+// console.log(size);
 
 // (string ki position agr single hy to index keh sakty hain or plurel position hy to indices)
 
@@ -487,6 +591,8 @@
 
 // console.log(outPut);
 
+// ==========================================================================================================
+
 // (escape characters)  \n =    it means string main next line add krna.
 
 // console.log ("usman\nghani");
@@ -499,7 +605,7 @@
 
 // (These are built-in functions to manipulate a string)
 
-// (note= string changed with upper and lower case method always called a new string ) (it means string is mutable---> not change able )
+// (note= string changed with upper and lower case method always called a new string ) (it means string is mutable---> not changeable )
 
 // 1.str.toUpperCase () (this method is used to convert string letter to upper case)
 
@@ -590,6 +696,9 @@
 
 // console.log(userName);
 
+// ==========================================================================================================
+
+
 // (arrays in js------>collections of items with same type or same variable e.g below)(arrays are mutable)
 
 // arrays    (arrays main position / index metter krti hy or is ka result linear main matlab aik line main show hota hy or arrays us waqat use krty hn jub aik ki type ka data ho or us ko store krna ho jasy marks of one entir class etc.)
@@ -599,15 +708,15 @@
 // let students = ['usman','ghani','mani','mano','musfirah','abeerah','fatimah'];
 // let marks = [55,66,77,88,99,44,33,22,11];
 
-// loop work with iterable like = string ,object ,arrays        (iterator means loop)
+// loop will work with iterable like = string ,object ,arrays        (iterator means loop)
 
 // looping over an Array  print all elements of array
 
 // we are attempting the loop with these hearos with for loop method
 
 // let heroes = [`antman,`,`spiderman`,`hulk` ,`stark`,`tomcriuse`,`ajay`,`amirkhan`,`salmankhan`]
-// for(let idx= 0; idx <heroes.length; idx++){
-//         console.log(heroes[idx]);
+// for(let a= 0; idx <heroes.length; a++){
+//         console.log(heroes[a]);
 // }
 
 // we are attempting the loop with these hearos with for-of loop method
@@ -634,6 +743,8 @@
 // }
 
 // let avg = sum / marks.length;
+
+// console.log(avg);
 
 // console.log(`the average of marks is = ${avg}`);
 
@@ -668,7 +779,7 @@
 
 // now i am solving the question by using for loop
 
-//  let items = [250 , 645, 300, 900, 50];
+// let items = [250 , 645, 300, 900, 50];
 
 // for(let i = 0; i < items.length; i ++){
 //         let offer       = items[i] / 10;
@@ -771,6 +882,9 @@
 
 // console.log(foodItems);
 
+// ========================================================================================================
+
+
 // (functions)  (Block of code that performs a specific task, can be invoked whenever we needed.)
 
 // function maniBhi(){
@@ -779,29 +893,54 @@
 // }
 // maniBhi();
 
+// ========================================================================================================
+
+
 // function first_Function(msg ,n){
 //         console.log(msg ,n);
 // }
 
 // first_Function(`how are you everyone`,100);
 
+// ========================================================================================================
+
+
 // function sum(x, y){
-//         s = x + y;
+//     let s = x + y;
 //         return s;
 
 // }
 
 // let val = sum(3,4);
 // console.log(val);
+// console.log(sum(3,4));
+
+// (these both are same upper and lower function are same)
+
+// function sum(x, y){
+//     return x + y;
+//         
+
+// }
+
+// let val = sum(3,4);
+// console.log(val);
+// console.log(sum(3,4));
+
+// ========================================================================================================
+
+
 
 // Arrow function is a compact method of function ===================================================
 // arrow function of variable main assign krna. arrow function is a part of modern part of java script.
+
 
 // const arrowSum = (a,b) => {
 
 //         console.log(a + b);
 // };
 // arrowSum(5 ,5);
+
 
 // multiplication arrow fun
 
@@ -1236,65 +1375,67 @@
 //     console.log(mode);
 // });
 
-let userScore = 0;
-let computerScore = 0;
+// this is a pratice Game
 
-const choices = document.querySelectorAll(`.choice`);
-const msg = document.querySelector(`#msg`);
-const userScorePara = document.querySelector(`#user-score`);
-const computerScorePara = document.querySelector(`#computer-score`);
+// let userScore = 0;
+// let computerScore = 0;
 
-const genCompChoice = () => {
-  const options = [`rock`, `paper`, `scissors`];
-  const randomidx = Math.floor(Math.random() * 3);
-  return options[randomidx];
-};
+// const choices = document.querySelectorAll(`.choice`);
+// const msg = document.querySelector(`#msg`);
+// const userScorePara = document.querySelector(`#user-score`);
+// const computerScorePara = document.querySelector(`#computer-score`);
 
-const drawGame = () => {
-  msg.innerText = `Game was Draw. Play Again!`;
-  msg.style.backgroundColor = `#081b31`;
-};
+// const genCompChoice = () => {
+//   const options = [`rock`, `paper`, `scissors`];
+//   const randomidx = Math.floor(Math.random() * 3);
+//   return options[randomidx];
+// };
 
-const showWinner = (userWin, compChoice, userChoice) => {
-  if (userWin) {
-    userScore++;
-    userScorePara.innerText = userScore;
-    msg.innerText = `You Win! your ${userChoice} Beats ${compChoice}`;
-    msg.style.backgroundColor = `green`;
-  } else {
-    computerScore++;
-    computerScorePara.innerText = computerScore;
-    msg.innerText = `You lost. ${compChoice} Beats your ${userChoice}`;
-    msg.style.backgroundColor = `red`;
-  }
-};
+// const drawGame = () => {
+//   msg.innerText = `Game was Draw. Play Again!`;
+//   msg.style.backgroundColor = `#081b31`;
+// };
 
-const playGame = (userChoice) => {
-  const compChoice = genCompChoice();
+// const showWinner = (userWin, compChoice, userChoice) => {
+//   if (userWin) {
+//     userScore++;
+//     userScorePara.innerText = userScore;
+//     msg.innerText = `You Win! your ${userChoice} Beats ${compChoice}`;
+//     msg.style.backgroundColor = `green`;
+//   } else {
+//     computerScore++;
+//     computerScorePara.innerText = computerScore;
+//     msg.innerText = `You lost. ${compChoice} Beats your ${userChoice}`;
+//     msg.style.backgroundColor = `red`;
+//   }
+// };
 
-  if (userChoice === compChoice) {
-    // draw Game
-    drawGame();
-  } else {
-    let userWin = true;
+// const playGame = (userChoice) => {
+//   const compChoice = genCompChoice();
 
-    if (userChoice === `rock`) {
-      //sciossrs , paper
-      userWin = compChoice === `paper` ? false : true;
-    } else if (userChoice === `paper`) {
-      // rock , scissors
-      userWin = compChoice === `scissors` ? false : true;
-    } else {
-      //paper , rock
-      userWin = compChoice === `rock` ? false : true;
-    }
-    showWinner(userWin, compChoice, userChoice);
-  }
-};
+//   if (userChoice === compChoice) {
+//     // draw Game
+//     drawGame();
+//   } else {
+//     let userWin = true;
 
-choices.forEach((choice) => {
-  choice.addEventListener(`click`, () => {
-    const userChoice = choice.getAttribute(`id`);
-    playGame(userChoice);
-  });
-});
+//     if (userChoice === `rock`) {
+//       //sciossrs , paper
+//       userWin = compChoice === `paper` ? false : true;
+//     } else if (userChoice === `paper`) {
+//       // rock , scissors
+//       userWin = compChoice === `scissors` ? false : true;
+//     } else {
+//       //paper , rock
+//       userWin = compChoice === `rock` ? false : true;
+//     }
+//     showWinner(userWin, compChoice, userChoice);
+//   }
+// };
+
+// choices.forEach((choice) => {
+//   choice.addEventListener(`click`, () => {
+//     const userChoice = choice.getAttribute(`id`);
+//     playGame(userChoice);
+//   });
+// });
