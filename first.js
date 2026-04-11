@@ -315,7 +315,6 @@
 
 // ===============================================================================================
 
-
 // let age = prompt("Enter Age to Check Age")
 
 // let result =  age >= 18 ? "adult" : "not adult";
@@ -345,7 +344,6 @@
 
 // ===============================================================================================
 
-
 // let mode = "white";
 
 // let color ;
@@ -363,7 +361,6 @@
 // console.log(color);
 
 // ===============================================================================================
-
 
 // let score = Number(prompt("Enter Num to check grade (0-100)"));
 
@@ -430,7 +427,6 @@
 
 // calculate the sum of 1 to 100
 
-
 // let sum = 0;
 // let n = 100;
 // for (let i = 1; i <= n ; i ++ ){
@@ -460,7 +456,6 @@
 // ab use kia do while loop or wohi same kam kia hum nay bas difference itna hy k variable lany k bad `do` main type kia kam jis per loop lagana tha or updation condition set ki.
 // or while main condition likh di is main code aik barr zaror run go q k condition bad main likha hy or jis per loop lagana tha wo first main likha hy.
 
-
 // (infinite loop)  type  (never ending loop)
 
 // 2. infinite loop (hint never use in real web ok!)
@@ -482,7 +477,6 @@
 // for(let character of str){
 //         console.log(character);
 // }
-
 
 // let str = "usmanghani";
 // let size = 0;
@@ -533,12 +527,10 @@
 //     }
 // };
 
-
 //                              (question solving)
 
 //                              (by using prompt with while loop)
 //                              (prompt say jo be return ata hy wo aik string hota hy )
-
 
 // let gameNum = 25;
 
@@ -697,7 +689,6 @@
 // console.log(userName);
 
 // ==========================================================================================================
-
 
 // (arrays in js------>collections of items with same type or same variable e.g below)(arrays are mutable)
 
@@ -884,7 +875,6 @@
 
 // ========================================================================================================
 
-
 // (functions)  (Block of code that performs a specific task, can be invoked whenever we needed.)
 
 // function maniBhi(){
@@ -895,7 +885,6 @@
 
 // ========================================================================================================
 
-
 // function first_Function(msg ,n){
 //         console.log(msg ,n);
 // }
@@ -903,7 +892,6 @@
 // first_Function(`how are you everyone`,100);
 
 // ========================================================================================================
-
 
 // function sum(x, y){
 //     let s = x + y;
@@ -919,7 +907,7 @@
 
 // function sum(x, y){
 //     return x + y;
-//         
+//
 
 // }
 
@@ -929,11 +917,8 @@
 
 // ========================================================================================================
 
-
-
 // Arrow function is a compact method of function ===================================================
 // arrow function of variable main assign krna. arrow function is a part of modern part of java script.
-
 
 // const arrowSum = (a,b) => {
 
@@ -941,15 +926,25 @@
 // };
 // arrowSum(5 ,5);
 
+// yeh uper wala function sirf print ho ga value return nh kary ga.
 
-// multiplication arrow fun
+// ab below function print bhe ho ga or value bhe return kary ga.
+
+// const arofun = (a,b,c) => {
+//     let sum = a+b+c;
+//     return sum;
+// }
+//  let total =arofun(10,13,14);
+//  console.log(total);
+
+// ========================================================================================================
+
+// multiplication arrow function
 
 // const multi = (x , y) => {
-
-//         console.log(x * y);
+//          console.log(x * y);
 
 // }
-
 // multi( 5 , 5);
 
 // const multi = (x , y) => {
@@ -962,15 +957,31 @@
 // let result = multi (5,5);
 // console.log(result);
 
+// ========================================================================================================
+
 // i am making a function that shows the vowels words in the string. lets start
 // itna code to hum ko function call per jo string write karien gy wo print kry ga.below code
 
 // function countVowels (string){
-//         for (let str of string)
-//                 console.log(str);
+//         for (let character of string)
+//                 console.log(character);
 // };
+// countVowels(`ranamuhammadusmanghanimanijani`);
+//
+// ab uper wala function hum arrow function say banaien gay.below function check karin.
 
-// this function is make for to calculate vowels words in the string.
+// const countVowels = (string) =>{
+//     for (let character of string){
+//           console.log(character);
+//     }
+// }
+// let count = countVowels(`abcdeeeeefgjsalfjslfjsa`);
+// console.log(count);
+
+// ========================================================================================================
+
+// this function is make for to the calculation of vowels words in the string.we are using for of loop in this function.
+
 // function countVowels(str) {
 //   let count = 0;
 //   for (const char of str) {
@@ -987,6 +998,10 @@
 //   }
 //   console.log(count);
 // }
+// let vowels = countVowels(`usman`);
+// console.log(vowels);
+
+// ========================================================================================================
 
 // now uper wala code arrow function say karine gay coding rat ko 2 bjy 05/03/2026
 
@@ -1012,9 +1027,14 @@
 // let abc = countVowels(`i am usman ghani and learning js and inshallah i will done it perfectly`);
 // console.log(abc);
 
+// ========================================================================================================
+
 // forEach loop in Arry (this will be only use for arry, not for a string.)
+
 // arr.forEach (callBackFunction)
+
 // CallbackFunction : Here, it is a function to execute for each element in the arry
+
 // A callback is a function passed as an argument to another function
 
 // let arr = [1, 2, 3, 4, 5];
@@ -1027,7 +1047,7 @@
 //     console.log(val)
 // })
 
-// below is the example of forEach loop, he will not work with string only with arry understan!.
+// below is the example of forEach, he will not work with string only with arry understan!.
 
 // let str = "usmanmani"
 
@@ -1059,13 +1079,13 @@
 
 // question for solving
 
-// For a given arry of numbers, print the square of each value by using forEach loop.
+// For a given arry of numbers, print the square of each value by using forEach method.
 
 // let arr = [1,2,3,4,5,]
 
 // arr.forEach(function mySquare(val){
-//     console.log(val*val);
-//     console.log(val **2)
+// console.log(val*val);
+// console.log(val **2)
 // })
 
 // now with arrow function
@@ -1076,13 +1096,15 @@
 //     console.log(val **2)
 // })
 
-// let arr = [1,2,3,4,5]
+// let arr = [1,2,3,4,5];
 //  let mani = (val) =>{
 //     console.log(val ** 2);
 //  }
 // arr.forEach(mani)
 
-//  map method (map method is very similar with forEach loop but the difference is map method give us a new arry while the forEach method only change the arry )
+// ========================================================================================================
+
+//  map method (map method is very similar with forEach method but the difference is map method give us a new arry while the forEach method only change the arry )
 
 //  map method (creates a new array with the results of some operation. The value its callback returns are used to form new arry)
 
@@ -1159,6 +1181,7 @@
 // console.log(sum);
 
 // // part three find product factroial  (dont use for biger num, will come error.don't use factorial for biger number)
+
 // let factroial = arr.reduce((previous , current)=>{
 //     return previous * current;
 // })
@@ -1166,6 +1189,7 @@
 // console.log( factroial);
 
 // DOM (Document Object Model)
+
 // what is ODM?---> when the page is loaded, the browser creates a document object model of the page.
 
 // Window Object => the window object an open window in a browser. it is browser's object not javascript and is automatically created by browser.it is a global object with lots of properties and methods.
@@ -1180,7 +1204,7 @@
 
 // run time per jub user website per ho hum javascript k through dynamically changes kr sakty han html main.
 // or hum nay color bhe change kia hy example k liy.
-// document.body.style.background = `green`     (try it with console in inspect )
+// document.body.style.background = `green`     (try it with console inspect )
 
 // ===============================================================================================
 
@@ -1260,13 +1284,23 @@
 
 // lets practice
 
-// Create a H2 heading element with text `hello javaScript`. Append `from apna college students` to this text using JS.
+// Create a h2 heading element with text `hello javaScript`. Append `from apna college students` to this text using JS.
 
-// create 3 divs with common class name `box` access them and add some unique text to each of them.
+// //  a += 4          a = a + 4
 
 // let h2 = document.querySelector(`h2`);
+
+// h2.innerText +=  `from apna college students`;
+
+// console.dir (h2.innerText);
+
+// let h2 = document.querySelector(`h2`);
+
 // console.dir(h2.innerText);
+
 // h2.innerText = h2.innerText + `apna collage students`;
+
+// create 3 divs with common class name `box` access them and add some unique text to each of them.
 
 // document.querySelector(`div`).children;
 
@@ -1332,7 +1366,7 @@
 // Events in javaScript     (The change in the state of an object is known as an Event)
 // Events are fired to notify code of `interesting changes` that may effect code execuation.
 
-// creating a button that change the mode from light to dark and vice versa (night 1:39 AM)
+// creating a button that change the mode from light to dark and vice versa (night 1:39 AM /march/2026)
 
 // let btn = document.querySelector(`#btn`);
 
@@ -1351,6 +1385,26 @@
 //     }
 //     console.log(mode);
 // });
+//
+
+// ab hum below example main hum without HTML and CSS k hum nay button bhe create kia hy DOM say or styling bhe di hy.
+
+// let button = document.createElement(`button`);
+// button.innerText= `click me`;
+// button.style.color = `blue`;
+// button.style.backgroundColor = `yellow`;
+// document.querySelector(`body`).append(button);
+// let mode = `light`;
+// button.addEventListener(`dblclick`,()=>{
+//     if (mode === `light`){
+//         mode = `dark`;
+//         document.querySelector(`body`).style.backgroundColor = `orange`;
+//     }else{
+//         mode = `light`;
+//         document.querySelector(`body`).style.backgroundColor = `black`;
+//     }
+//     console.log(mode);
+// })
 
 // now we are using css for changing colors. In this case the styling file is css and connected with js by adding (body.classList.add(`dark/white`))
 
@@ -1439,3 +1493,479 @@
 //     playGame(userChoice);
 //   });
 // });
+
+// const student = {
+//     fullName :`usman`,
+//     marks: 66,
+//     printMarks: function (){
+//         console.log(this.marks);
+//     }
+// }
+// this is a new keyword and it means this.marks = marks of student object.
+// javaSript main jub bhe hum this keyword use krty hian kisi object main to us ka matlab hy k wohi he object jis per kam kar rahy hain.
+
+// =======================================================================================================
+
+// Prototype (__proto__)(Prototype apny ap main aik object hota hy)
+// (typeof array = is also an object)
+
+// const employee = {
+//     calcTax1 (){
+//         console.log (`tax rate is 10%`);
+//     },
+//     calcTax2 : function (){
+//         console.log(`tax rate is 20%`);
+//     }
+// };
+
+// const employee = {
+//     calcTax1 (){
+//         console.log (`tax rate is 10%`);
+//     }
+// };
+
+// uper example main aik object main do function hian or dono he sahi method say banay gay hain lakin first wala easy hy.
+
+//  karanArjun = {
+//     salary : 50000,
+// }
+// agr hum ko employee object ka function karanArjun ki object say connect krana ho wo kasy karin gay matlab calcTax wala function karanArjun wali object ko chahay to kia karien?
+
+// karanArjun.__proto__ = employee;
+
+// asa syntax run karny say jo function and method employee object k pass hon gay wo sary karanArjun ko mil jaien gay.matlab agr ab hum karanArjun ki object ko console main open karien gay to calcTax wala function karanArjun ki object mian bhe show ho ga.right boss!
+
+// agr object and prototype main same method hon to object wala method kam kary ga prototype wala example nh give below.
+
+// const employee = {
+//   calcTax1() {
+//     console.log(`tax rate is 10%`);
+//   },
+// };
+
+// karanArjun = {
+//   salary: 50000,
+//   calcTax1() {
+//     console.log(`tax rate is 20%`);
+//   },
+// };
+
+// ab karanArjun ka tax rate 20% or employee object ka 10% hy or dono main same function hy ab kon sa kam kary ga.certainly agr hum karanArjun object ko print karwaien gay to karanArjun wali object wala function he print ho ga.it means (// agr object and prototype main same method hon to object wala method kam kary ga prototype wala example nh give below.)
+
+// if object and prototype have same method, object's method will work.
+
+// karanArjun.__proto__ = employee;
+
+// classes in javaScript.(Class is a program-code template for creating objects.)
+// classes basically aik object ko banany ka template dati hain.
+// example agr aik company hy or us main 50 employee hian or her aik ka salary package bhe ho ga or email,phoneNum,address or name etc to kia hum 50 object banay ya aik template banaien ofcourse template is better.
+
+// class aik object k ley aik bluePrint hoti hy.
+
+// those object will have some state (variables) and some behaviour (functions) inside it.
+
+// syntax of class MyClass
+
+// class MyClass{
+//     constructor(){}
+//     myMethod (){}
+
+// }
+
+// let myObj = new MyClass(); (yeh syntax hy aik class template say aik object create krny ka)
+
+// class toyotaCar {
+//     start(){
+//         console.log(`start`);
+//     }
+//     stop(){
+//         console.log(`stop`);
+//     }
+//     setBrand (brand){
+//         this.Brand = brand;   // this = jis object nay function call kia. jo this k sath likha hy(brand) wo abject ki property hy. or dosra hy jo hy wo function ka argument hy.
+//     }
+// }
+
+// let fortuner = new toyotaCar();
+// fortuner.setBrand(`fortuner`);
+// let lexus = new toyotaCar();
+// lexus.setBrand(`lexus`);
+
+// ab hum nay aik class template banai toyotaCar or aik object bhe banaya fortuner ka.(upper banaya).
+
+// =======================================================================================================
+
+// constructor (automatically created by javaSript)
+
+// constructor()method is:
+
+// automatically invoked by new
+
+// initializes object
+
+// let obj = new myClass ();    (is main jo new keyword hy wo create kary ga object main constructor or hum custom constructor bhe create kr sakty hain. )
+
+// Use of constructor = jub hum kisi object k initialize main koi kam karna ho matlab start main.
+
+// constructor hota method hy
+
+// class toyotaCar {
+//     constructor(){
+//         console.log (`creating new object`);
+
+//     }
+//     start()
+//     {
+//         console.log(`start`);
+//     }
+//     stop()
+//     {
+//         console.log(`stop`);
+//     }
+//     setBrand (brand)
+//     {
+//         this.Brand = brand;
+//     }
+// }
+
+// let fortuner = new toyotaCar();     // consrtuctor
+
+// let lexus = new toyotaCar();        // consrtuctor
+
+// =======================================================================================================
+
+// class toyotaCar {
+//     constructor(brand , mileage){
+//         console.log (`creating new object`);
+//         this.brand = brand;
+//         this.mileage = mileage;
+//     }
+//     start()
+//     {
+//         console.log(`start`);
+//     }
+//     stop()
+//     {
+//         console.log(`stop`);
+//     }
+
+// }
+
+// let fortuner = new toyotaCar(`fortuner`,10);
+
+// console.log(fortuner);
+
+// let lexus = new toyotaCar(`lexus`, 15);
+
+// console.log(lexus);
+
+// =======================================================================================================
+
+// inheritance in javaSript
+
+// (inheritance is passing down properties and methods from parrent class to child class. )
+
+// jasy dada dadi nana nani say humary maa or baap nay liy or un say hum or hum say humary bachy.
+
+// example
+
+// class parrent{
+//     hello(){
+//         console.log(`hellp`);
+//     }
+// }
+
+// class child {
+//     hello(){
+//         console.log(`hello`);
+//     }
+// }
+
+// ab humary pass do classes hain aik parrent and second child or dono main same function hy
+// ab hum parrent class say inhertiance karien gay child class main example give below.
+
+// class parrent {
+//   hello() {
+//     console.log(`hello`);
+//   }
+// }
+
+// class child extends parrent {}
+
+// let obj = new child();
+
+// agr hum console.log karien (obj.hello();) to hello function inhertitate to gaya object main
+// ab is main howa yeh hy k obj.hello() JS nay hello() ko first obj main dakha nh mila phr child class main nh mila phr mila us ko parrent class main to obj.hello()= hellp print howa. so simple!
+
+// if child and parrent have same methods or behaviours then child's method will work example give below.
+
+// class person {
+//   eat(){
+//     console.log(`eat`);
+//   }
+//   sleep(){
+//     console.log(`sleep`);
+//   }
+// }
+
+// class children extends person{
+//   work(){
+//     console.log(`work hard is a key of success`);
+//   }
+
+// }
+// let childObj = new children();
+
+// ab uper waly code main person k pass jo kuch hy wo sab mil gaya children class ko or sab save ho gaya childObj mian ab ap childObj.eat/sleep/work/ in main say kuch beh use kar sakty ho.
+
+// Jab tum kisi class se object banate ho, to us object ko us class ka instance kehte hain.
+
+// Class = design / blueprint
+
+// Instance = us design se bani hui real cheez
+
+// class person {
+//   eat(){
+//     console.log(`eat`);
+//   }
+//   sleep(){
+//     console.log(`sleep`);
+//   }
+//   work(){
+//     console.log(`do not work yet`);
+//   }
+// }
+
+// class Engineer extends person {
+//   work(){
+//     console.log(`solve the problems`);
+//   }
+// }
+
+// let personObj = new person();
+
+// let EngineerObj = new Engineer();
+
+// if child and parrent have same methods or behaviours then child's method will work example give below.(this is called Method Over-riding)
+
+// new person(); = yeh jo likha hy is ka matlab hum person class ka object bana rahy ho.
+
+// new Engineer(); = yeh jo likha hy is ka matlab hum Engineer class ka object bana rahy ho.
+
+// class person {
+//   constructor(){
+//     this.species = `home sapiens`;
+//   }
+//   eat(){
+//     console.log(`eat`);
+//   }
+//   sleep(){
+//     console.log(`sleep`);
+//   }
+//   work(){
+//     console.log(`do not work yet`);
+//   }
+// }
+
+// class Engineer extends person {
+//   work(){
+//     console.log(`solve the problems`);
+//   }
+// }
+
+// let personObj = new person();
+
+// let EngineerObj = new Engineer();
+
+// upper hum nay aik constructor liya hy or jub bhe person class koi new object banay gai to constructor create hoga sabsay phly agr hum custom constructor na bhe creat karien to javaSript khud create kr lati hy or shyed upper yeh hum nay parha bhe ho.
+// G bilkul or agr ab hum personObj and EngineerObj ko console.log main print karien to species dono object main show hon gai q k hum inheritance method use kar rahy hain with the keyword of extends.
+
+// =======================================================================================================
+
+// super Keyword
+
+// The super keyword is used to call the constructor of its parrent class to access the parrent's properties and methods.
+// in other words we can say child class say hum parrent class ki properties and methods ko access krna parta hy.ya parrent class k constructor ko call krna parta hy.we use super keyword to call the constructor of a parrent class.
+// we have to use super keyword whenever we want to use child class or using this keyword.
+// we have to write super keyword before `this` and `exit` constructor.
+
+// ab agr person class main name add kran ho because more commonly, person class main name property honi chahy agr ko bhe person ho us ka name to hota he hy.
+
+// class person {
+
+//   constructor(){
+//     this.species = `home sapiens`;
+//   }
+//   eat(){
+//     console.log(`eat`);
+//   }
+// }
+
+// class Engineer extends person {
+
+//   constructor(branch){
+//       super();// to invoke parrent class constructor
+
+//   }
+//   work(){
+//     console.log(`solve the problems`);
+//   }
+// }
+
+// let EngObj = new Engineer();
+
+// agr humary pass do constructor hain means parrent class or child class ka constructor to hum agr child class waly ko call kairn direct or parrent waly ko call agr nh kia howa to hum error mila ga.
+// it is necessory to call first parent class constructor by using super key word. Right !
+
+// class person {
+//   constructor(name) {
+//     this.species = `home sapiens`;
+//     this.name = name;
+//   }
+//   eat() {
+//     console.log(`eat`);
+//   }
+// }
+
+// class Engineer extends person {
+//   constructor(name) {
+//     super(name);
+//   }
+//   work() {
+//     console.log(`solve the problems`);
+//   }
+// }
+
+// let EngObj = new Engineer(`ali`);
+
+// up and down code main difference. hum nay parent class (person) ko this.name ki property d hy or name ko as a parameter pass kia hy constructor main or wohi name ko child class k constructor ko as a parameter pass kia hy or super main bhe or jaha child class ki instance object banai hy waha argument pass ker deya hy `ali`.
+
+// class person {
+//   constructor() {
+//     this.species = `home sapiens`;
+//   }
+//   eat() {
+//     console.log(`eat`);
+//   }
+// }
+
+// class Engineer extends person {
+//   constructor(name) {
+//     super();
+//     this.name = name;
+//   }
+//   work() {
+//     console.log(`solve the problems`);
+//   }
+// }
+
+// let EngObj = new Engineer(`ali`);
+
+// ab hum nay this.name ki property child class ko di hy is liy hum ko super main call nh krna para lakin constructor main to call zarori hy waha per to paremeter to pass krna ho ga tab he jo name dain gay print hoga. kuch had tak concept howa clear !?
+
+// class person {
+//   constructor(name) {
+//     this.species = `home sapiens`;
+//     this.name = name;
+//   }
+//   eat() {
+//     console.log(`eat`);
+//   }
+// }
+
+// class Engineer extends person {
+//   constructor(name) {
+//     super(name);
+//   }
+//   work() {
+//     super.eat();
+
+//     console.log(`solve the problems`);
+//   }
+// }
+
+// let EngObj = new Engineer(`ali`);
+
+
+// ab agr EngObj.work(); ko print krwaien gy to first eat then work ay ga right!
+
+// =======================================================================================================
+
+// question solving:
+
+
+
+// class User {
+//   constructor(name, email){
+//     this.name = name;
+//     this.email = email;
+//   }
+//   viewData(){
+//     console.log(`YOU CAN VIEW DATA`);
+//   }
+// }
+
+// class Admin extends User {
+//   constructor(name, email){
+//     super(name,email);
+//   }
+//   editData(){
+//     console.log(`allow to edit website`);
+//   }
+// }
+
+// let student1 = new User (`usman`,`mani@gmail.com`);
+// let teacher1 = new Admin(`abc`,`abc@gmail.com`);
+
+
+// =======================================================================================================
+
+
+// Error Handling:
+// try{
+
+// }catch(err){
+//   console.log(err);
+// }
+
+
+// let a = 5;
+// let b = 6;
+// console.log(a+b+b);
+// console.log(a+b+b);
+// console.log(a+b+b);
+// console.log(c+a+b);  // error line 
+// console.log(a+b+b);
+// console.log(a+b+b);
+// console.log(a+b+b);
+
+// asa code error say upper tak excute hoga lakin erroy handling syntax say error line ko try catch main agr likn dain gay to neachy wala code bhe excute hoga.
+
+
+
+// let a = 5;
+// let b = 6;
+// console.log(a+b+b);
+// console.log(a+b+b);
+// console.log(a+b+b);
+// try{
+// console.log(c+a+b);  // error line 
+
+// }catch(err){
+//   console.log(err);
+// }finally{
+//   console.log(`yeh finally block hai hamesha chalega`);
+// }
+// console.log(a+b+b);
+// // throw new Error (`this is not fine`);apni tarif say error add krna custom Error (E capital use hoga.)
+// console.log(a+b+b);
+
+// console.log(a+b+b);
+
+
+// =======================================================================================================
+
+
+// ab hum async promise chain and callback hell ho samijhaien gay inshallah.
+
+
