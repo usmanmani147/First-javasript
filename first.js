@@ -1886,14 +1886,11 @@
 
 // let EngObj = new Engineer(`ali`);
 
-
 // ab agr EngObj.work(); ko print krwaien gy to first eat then work ay ga right!
 
 // =======================================================================================================
 
 // question solving:
-
-
 
 // class User {
 //   constructor(name, email){
@@ -1917,9 +1914,7 @@
 // let student1 = new User (`usman`,`mani@gmail.com`);
 // let teacher1 = new Admin(`abc`,`abc@gmail.com`);
 
-
 // =======================================================================================================
-
 
 // Error Handling:
 // try{
@@ -1928,20 +1923,17 @@
 //   console.log(err);
 // }
 
-
 // let a = 5;
 // let b = 6;
 // console.log(a+b+b);
 // console.log(a+b+b);
 // console.log(a+b+b);
-// console.log(c+a+b);  // error line 
+// console.log(c+a+b);  // error line
 // console.log(a+b+b);
 // console.log(a+b+b);
 // console.log(a+b+b);
 
 // asa code error say upper tak excute hoga lakin erroy handling syntax say error line ko try catch main agr likn dain gay to neachy wala code bhe excute hoga.
-
-
 
 // let a = 5;
 // let b = 6;
@@ -1949,7 +1941,7 @@
 // console.log(a+b+b);
 // console.log(a+b+b);
 // try{
-// console.log(c+a+b);  // error line 
+// console.log(c+a+b);  // error line
 
 // }catch(err){
 //   console.log(err);
@@ -1957,15 +1949,178 @@
 //   console.log(`yeh finally block hai hamesha chalega`);
 // }
 // console.log(a+b+b);
-// // throw new Error (`this is not fine`);apni tarif say error add krna custom Error (E capital use hoga.)
+// // throw new Error (`this is not fine`); //apni tarif say error add krna custom Error (E capital use hoga.)
 // console.log(a+b+b);
 
 // console.log(a+b+b);
-
 
 // =======================================================================================================
 
-
 // ab hum async promise chain and callback hell ho samijhaien gay inshallah.
+
+// 1sec = 1000ms        2sec = 2000ms use ms in setTimeout function.
+
+// Synchronous:
+
+// (it means the code runs in the particular sequence of instructions given in the program.)
+// each instruction waits to complete the previous instruction to complete its excuation.
+
+// // example :
+// console.log(`one`);
+// console.log(`two`);
+// console.log(`three`);
+
+// matlab yeh k aik sequence say code chaly ga phlay 1 phr 2 and 3 print ho ga.
+
+// Asynchronous:
+
+// Due to synchronous programming, sometime important instructions get blocked due to some previous instructions, which causes the delay in the UI.
+// asynchronous code excuation allows to excute the next instructions immediately and doesn't block the flow.
+
+// Asynchronous example: with compact syntax:
+
+// console.log(`line1`);
+// console.log(`line2`);
+// setTimeout( ()=>{
+//     console.log(`hello`);
+// },4000)
+// console.log(`line3`);
+// console.log(`line4`);
+
+// exactly howa yeh hy k hum agr koi program bana rahy hian or koi asi chez hy jis per excution time required hy or hum chahty hain k jis ko time delay hy wo lay lay lakin us k bad wala code to excute ho flow k sath. asa na ho k jis excutaion ka wait karien hum wo bad waly syntax k liy zarori bhe na hon to waha per asynchronous sequence use krna parata hy.
+
+// Asynchronous example: with simple syntas:
+
+// console.log(`line1`);
+// console.log(`line2`);
+
+// function hello(){
+//     console.log(`hello`)
+// }
+// setTimeout(hello, 2000); setTimeout callback leta hy or callback kia hota hy? jo is main hello hy kisi function ka name argument main pass krna callback kehlata hy
+
+// console.log(`line3`);
+// console.log(`line4`);
+
+// Callbacks:
+
+// a callback is a function passed as an argument to another function.
+
+// example callback:
+
+//  const USMAN = ()=>{
+//     console.log(`beautifull weather of world!`);
+// }
+// const GHANI = (cb)=>{
+//     console.log(`this is amazing`);
+//     cb();
+// }
+// GHANI(USMAN);
+
+// =======================================================================================================
+
+// Callback Hell:
+
+// nested callbacks stacked below one another forming a paramid structure.(paramid of doom).
+
+// function getData (data){
+//     setTimeout(() => {
+//     console.log(`dataId=`,data);
+
+//     }, 2000);
+// }
+
+// getData(1);
+// getData(2);
+// getData(3);
+
+// is main function ko call ki (getData ) ko or argument main 3 different values bhe pass ki
+// howa yeh k 3no calls ka print aik sath hoya 2 sec bad due to setTimeout.
+
+// aik data print ho tab dosra ka print ho or phr tesry ka aik sath print data na ho 3no ka. us kaam ki try karty hain.
+
+// function getData (){
+
+//         console.log(`hello usman`);
+// }
+
+// setTimeout(getData,2000);
+
+// =======================================================================================================
+
+// const getData = (Data) =>{
+//     setTimeout(()=>{
+//         console.log(`getData=`,Data);
+//     },3000)
+// }
+
+// console.log(getData(147));
+
+// 3sec bad 147 print ho ga.
+
+// =======================================================================================================
+
+// we are learning callback chaining (data flow).
+
+
+// const getData = (dataId, getNextData) => {
+//   setTimeout(() => {
+//     console.log(`data=`, dataId);
+//     if (getNextData){
+//       getNextData();
+
+//     }
+    
+//   }, 3000);
+// };
+// getData(1, () => {
+//   getData(2);
+// });
+
+
+
+// in upper condition: syntax main getData function nh arrow function hy or two parameter hain.
+// (dataId,getNextData) phr hum nay setTimeout main dataId print kerwaya or bad main if use kia yeh nai chez lagi mujy is time to main nay socha k note kr don.if say phlay aik bat--->  getData k argument main hum nay do value pass ki hain. 1 and ()=>{getData(2);}  yeh hain phali value (1) save hui dataId parameter main or ()=>{getData(2);} yeh save hui getNextData jo k 2nd parameter hy.ab hum nay if condition (check) lagi hy or check kia hy k agr to getNextData humara function hy to us ko call karo nh to na karo.yahan per getNextData function jo hy wo getData ko jub call keya or arrow fun say as a value pass kia to yeh fun ban gaya.
+
+
+// () => { getData(2); } ek anonymous arrow function hy.
+
+// Iska matlab:
+
+// Iska koi naam nahi hai
+// Ye ek function hi hai
+// Tum ne isay as a value pass kiya hai agrument main.
+
+
+const getData = (dataId, getNextData) => {
+  setTimeout(() => {
+    console.log(`data=`, dataId);
+    if (getNextData){
+      getNextData();
+    }
+  }, 2000);
+};
+
+
+getData(1, () => {
+  getData(2,()=>{
+    getData(3,()=>{
+        getData(4,()=>{
+            getData(5);
+        });
+    });
+  });
+});
+
+
+// it is called callback hell (is also called a nested callback)
+// Callback kya hota hai?
+
+// 👉 Callback = wo function jo kisi doosray function ko as a argument diya jata hai, taake baad mein call ho
+
+// =======================================================================================================
+
+//promise: promise is used to handle the callbackhell problem.we can say it is more updated syntax from callback syntax.
+
 
 
