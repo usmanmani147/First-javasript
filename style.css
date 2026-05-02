@@ -15,8 +15,8 @@
 .white {
     background-color: white;
     color: black;
-} */
-body {
+} 
+ body {
   min-width: 800px;
 }
 
@@ -102,4 +102,11 @@ p{
 .msg-container{
    
     margin-top:3rem;  
-}
+} */
+/* 
+
+#btn {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+} */
