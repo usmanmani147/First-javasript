@@ -234,7 +234,7 @@
 
 // let cond4 = a !== 5;
 
-// console.log( cond1 && cond2);
+// console.log(cond1 && cond2);
 
 // console.log(cond1 || cond2);
 
@@ -1192,7 +1192,7 @@
 
 // what is ODM?---> when the page is loaded, the browser creates a document object model of the page.
 
-// Window Object => the window object an open window in a browser. it is browser's object not javascript and is automatically created by browser.it is a global object with lots of properties and methods.
+// Window Object => the window object an open window in a browser. it is browser's object not javascript. is automatically created by browser.it is a global object with lots of properties and methods.
 
 // html ko hum javacript main acess kr sakty hain or html k sary element javacript main a kr aik object main convert ho jaty hain or us object ko hum document kehty hain.document object, window object main available hota hy.
 
@@ -1429,6 +1429,8 @@
 //     console.log(mode);
 // });
 
+// =======================================================================================================
+
 // this is a pratice Game
 
 // let userScore = 0;
@@ -1494,6 +1496,8 @@
 //   });
 // });
 
+// =======================================================================================================
+
 // const student = {
 //     fullName :`usman`,
 //     marks: 66,
@@ -1502,7 +1506,7 @@
 //     }
 // }
 // this is a new keyword and it means this.marks = marks of student object.
-// javaSript main jub bhe hum this keyword use krty hian kisi object main to us ka matlab hy k wohi he object jis per kam kar rahy hain.
+// javaSript main jub bhe hum this keyword use krty hain kisi object main to us ka matlab hy k wohi he object jis per kam kar rahy hain.
 
 // =======================================================================================================
 
@@ -1524,7 +1528,7 @@
 //     }
 // };
 
-// uper example main aik object main do function hian or dono he sahi method say banay gay hain lakin first wala easy hy.
+// uper example main aik object main do function hain or dono he sahi method say banay gay hain lakin first wala easy hy.
 
 //  karanArjun = {
 //     salary : 50000,
@@ -1814,7 +1818,7 @@
 
 // let EngObj = new Engineer();
 
-// agr humary pass do constructor hain means parrent class or child class ka constructor to hum agr child class waly ko call kairn direct or parrent waly ko call agr nh kia howa to hum error mila ga.
+// agr humary pass do constructor hain means parrent class or child class ka constructor to hum agr child class waly ko call kairn direct or parrent waly ko call agr nh kia howa to hum ko error mila ga.
 // it is necessory to call first parent class constructor by using super key word. Right !
 
 // class person {
@@ -1997,10 +2001,14 @@
 // function hello(){
 //     console.log(`hello`)
 // }
-// setTimeout(hello, 2000); setTimeout callback leta hy or callback kia hota hy? jo is main hello hy kisi function ka name argument main pass krna callback kehlata hy
+// setTimeout(hello, 2000);
+
+//  setTimeout callback leta hy or callback kia hota hy? jo is main hello hy kisi function ka name argument main pass krna callback kehlata hy
 
 // console.log(`line3`);
 // console.log(`line4`);
+
+// =======================================================================================================
 
 // Callbacks:
 
@@ -2016,6 +2024,8 @@
 //     cb();
 // }
 // GHANI(USMAN);
+
+// USMAN is a callback function.
 
 // =======================================================================================================
 
@@ -2062,7 +2072,6 @@
 
 // we are learning callback chaining (data flow).
 
-
 // const getData = (dataId, getNextData) => {
 //   setTimeout(() => {
 //     console.log(`data=`, dataId);
@@ -2070,18 +2079,15 @@
 //       getNextData();
 
 //     }
-    
+
 //   }, 3000);
 // };
 // getData(1, () => {
 //   getData(2);
 // });
 
-
-
 // in upper condition: syntax main getData function nh arrow function hy or two parameter hain.
-// (dataId,getNextData) phr hum nay setTimeout main dataId print kerwaya or bad main if use kia yeh nai chez lagi mujy is time to main nay socha k note kr don.if say phlay aik bat--->  getData k argument main hum nay do value pass ki hain. 1 and ()=>{getData(2);}  yeh hain phali value (1) save hui dataId parameter main or ()=>{getData(2);} yeh save hui getNextData jo k 2nd parameter hy.ab hum nay if condition (check) lagi hy or check kia hy k agr to getNextData humara function hy to us ko call karo nh to na karo.yahan per getNextData function jo hy wo getData ko jub call keya or arrow fun say as a value pass kia to yeh fun ban gaya.
-
+// (dataId,getNextData) phr hum nay setTimeout main dataId print kerwaya or bad main if use kia yeh new chez lagi mujy is time to main nay socha k note kr don.if say phlay aik bat--->  getData k argument main hum nay do value pass ki hain. 1 and ()=>{getData(2);}  yeh hain phali value (1) save hui dataId parameter main or ()=>{getData(2);} yeh save hui getNextData jo k 2nd parameter hy.ab hum nay if condition (check) lagi hy or check kia hy k agr to getNextData humara function hy to us ko call karo nh to na karo.yahan per getNextData function jo hy wo getData ko jub call keya or arrow fun say as a value pass kia to yeh fun ban gaya.
 
 // () => { getData(2); } ek anonymous arrow function hy.
 
@@ -2091,27 +2097,24 @@
 // Ye ek function hi hai
 // Tum ne isay as a value pass kiya hai agrument main.
 
+// const getData = (dataId, getNextData) => {
+//   setTimeout(() => {
+//     console.log(`data=`, dataId);
+//     if (getNextData){
+//       getNextData();
+//     }
+//   }, 2000);
+// };
 
-const getData = (dataId, getNextData) => {
-  setTimeout(() => {
-    console.log(`data=`, dataId);
-    if (getNextData){
-      getNextData();
-    }
-  }, 2000);
-};
-
-
-getData(1, () => {
-  getData(2,()=>{
-    getData(3,()=>{
-        getData(4,()=>{
-            getData(5);
-        });
-    });
-  });
-});
-
+// getData(1, () => {
+//   getData(2,()=>{
+//     getData(3,()=>{
+//         getData(4,()=>{
+//             getData(5);
+//         });
+//     });
+//   });
+// });
 
 // it is called callback hell (is also called a nested callback)
 // Callback kya hota hai?
@@ -2122,5 +2125,196 @@ getData(1, () => {
 
 //promise: promise is used to handle the callbackhell problem.we can say it is more updated syntax from callback syntax.
 
+// Promise is for `eventual` completion of task. It is an object in JS.It is a solution to callback hell.
 
+// syntax of promise is given below:
+
+// let promise = new Promise ((resolve,reject)=>{
+//                      fun with two handlers  })
+
+// (resolve & reject are callbacks given by JS )
+// callbacks means hum in ko argument main use karien gay ok.
+// A javaScript promise object can be:
+
+// pending: (it means in process)
+
+// resolved:(it means completed)        (resolve)(result)
+
+// rejected:(it means canceled)         (reject) (error)
+
+// promise has state (pending,fulfilled) & some results (result for resolve & error for reject).
+
+// how to use promise:
+
+// promise.then ((res)=>{....})
+
+// promise.catch ((err)=>{....})
+
+// there are two promise methods we can use.
+
+// jp upper hum nay callback say kam kia tha ab promise say kar rahy hain example given below.(promise chain)
+
+
+
+
+// const getData = (dataId) => {
+//  return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log(`data=`, dataId);
+//       resolve(`fulfilled`);
+//     }, 1000);
+//   });
+// };
+
+//  getData(1)
+//     .then((resolve)=>{
+//     console.log(resolve);
+//     return getData(2);
+// })
+// .then((resolve)=>{
+//     console.log(resolve);
+//     return getData(3);
+// })
+// .then ((resolve)=>{
+//     console.log(resolve);
+//     return getData(4);
+// })
+// .then ((resolve)=>{
+//     console.log(resolve);
+//     return getData(5);    
+// })
+// .then((resolve)=>{
+//     console.log(resolve);
+// })
+
+
+// =======================================================================================================
+
+
+// async / await        (async function always returns a promise)
+
+// async function myFunction(){.....} 
+
+// hum kisi normal fun k sath async laga kr us ko async function bana sakty hain hy.
+
+// function hello (){
+//     console.log(`hello`);
+// }
+
+// uper wala simple fun hy normal or hum ab async fun bana rahay hain.
+
+// async function hello (){
+//     console.log(`hello`);
+// }
+
+// now above code is a async function.
+
+// =======================================================================================================
+
+
+
+// const getData = (DATA) => {
+//  return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log(`data received`,DATA);
+//       resolve(200);
+//     }, 1000);
+//   })
+// }
+
+// async function getingData(){
+//     console.log(`getting data1.......`);
+//     await getData(1);
+//     console.log(`getting data2.......`);
+//     await getData(2);
+//     console.log(`getting data3.......`);
+//     await getData(3);
+//     console.log(`getting data4.......`);
+//     await getData(4);
+//     console.log(`getting data5.......`);
+//     await getData(147);
+
+// };
+
+
+// This is all about async-await. so simple as compared to promise and callback syntax.
+
+// =======================================================================================================
+
+
+// API(Application Programming Interface)
+
+// fetch API
+
+// The fetch API provides an interface for fetching(sending/receiving) resources.
+
+// It used Request and Response objects.
+
+// The fetch method() is used to fetch a resourse (data).
+
+
+// let promise = fetch (url,[options])
+
+// AJAX
+// JSON
+// json()   it is also asynchronous method (function) and also return promise.
+// fetch () it is also asynchronous method (function) and also return promise.
+
+
+
+
+// const url = "https://jsonplaceholder.typicode.com/posts"
+// const title = document.querySelector(`#title`);
+// const button = document.querySelector(`#btn`);
+// const buttonName = button.innerText = `Click Me!`;
+
+// using method under async and await.
+
+// const dogWealth = async() =>{
+//     let response = await fetch (url);
+//     console.log(response);
+//     let data = await response.json();
+//     title.innerText = data[5].title;
+// }
+
+// using method under promise chaining.
+
+
+// function dogWealth() {
+//     fetch (url).then ((response)=>{
+//        return response.json();
+//     })
+//     .then((data)=>{
+//         console.log(data);
+//         title.innerText = data[5].title;
+
+//     });
+// }
+//     button.addEventListener(`click`,dogWealth);
+
+// hum nay aik api ko request send ki or phr us nay hum ko aik response return kr diya.
+// phr hum nay aik html main para ka tag banaya or us ko innerHTML say select kia or response jo aya us main say title ko print kia or us ko para k tag main save kr diaya.
+// button click krny per response return aya or us ka title bhe print kia hum nay running time per innerHTML say.
+
+
+
+// =======================================================================================================
+
+
+// calculator project
+
+// let display = document.querySelector(`#display`);
+
+// function appendValue(value){
+//     display.value += value;
+// }
+
+
+// function clearDisplay () {
+//     display.value  = "";
+// }
+
+// function calculateResult (){
+//     display.value = eval(display.value);
+// }
 
