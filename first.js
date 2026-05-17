@@ -124,7 +124,7 @@
 
 // operatores in javaScript=================================================================================
 
-// Artimetic Operators                           used with 2 operands a & b
+// Arithmetic Operators                           used with 2 operands a & b
 
 // (+ - * /)
 
@@ -201,16 +201,16 @@
 // ===  is equal to & type
 // !==  is not equal to & type
 
-// | Operator | Meaning            | Checks       | Example     | Result |
-// | -------- | ------------------ | ------------ | ----------- | ------ |
-// | `==`     | Equal (loose)      | Value only   | `"5" == 5`  | true   |
-// | `===`    | Equal (strict)     | Value + Type | `"5" === 5` | false  |
-// | `!=`     | Not equal (loose)  | Value only   | `"5" != 5`  | false  |
-// | `!==`    | Not equal (strict) | Value + Type | `"5" !== 5` | true   |
-// | `>`      | Greater than       | Value        | `5 > 3`     | true   |
-// | `<`      | Less than          | Value        | `5 < 3`     | false  |
-// | `>=`     | Greater or equal   | Value        | `5 >= 5`    | true   |
-// | `<=`     | Less or equal      | Value        | `3 <= 5`    | true   |
+// | Operator | Meaning            | Checks       | Example   | Result |
+// | -------- | ------------------ | ------------ | ----------| ------ |
+// | `==`     | Equal (loose)      | Value only   | "5" == 5  | true   |
+// | `===`    | Equal (strict)     | Value + Type | "5" === 5 | false  |
+// | `!=`     | Not equal (loose)  | Value only   | "5" != 5  | false  |
+// | `!==`    | Not equal (strict) | Value + Type | "5" !== 5 | true   |
+// | `>`      | Greater than       | Value        |  5 > 3    | true   |
+// | `<`      | Less than          | Value        |  5 < 3    | false  |
+// | `>=`     | Greater or equal   | Value        |  5 >= 5   | true   |
+// | `<=`     | Less or equal      | Value        |  3 <= 5   | true   |
 
 // ===========================================================================================================
 
@@ -240,15 +240,15 @@
 
 // console.log(cond3 || cond4);
 
-// console.log(!a < b );
+// console.log(!a < b );        (Reverse ans will be occur)
 
-// console.log(!a > b );
+// console.log(!a > b );        (Reverse ans will be occur)
 
 // ========================================================================================================
 
 // conditional statement        to implement some condition in the code
 
-// Types of statements ( if , else if )
+// Types of statements ( if ,if else, else if )
 
 // if statement, is only use to check the statement, if statement will true is will work otherwise will not work.
 // let age = 18;
@@ -267,7 +267,7 @@
 
 // in above example is age will more then 18 the if statement will not work
 
-// now we are making two options statement in which we show first and secod statement(we can use multiple statements with this method) as we mentioned above >18 and <17 wala.
+// now we are making two options statement in which we show first and second statement(we can use multiple statements with this method) as we mentioned above >18 and <17 wala.
 // for this method we will use if else statement, in this statement we have more then one options for excution.
 
 // let age = prompt(`enter the age to check vote status`);
@@ -281,7 +281,6 @@
 
 // else if hamesha if ke baad aata hai, aur else se pehle.
 // else optional hai, aur last mein aata hai.
-// else if ko alag likhte hain, elseif ya else: if nahi (JavaScript mein)
 
 // now in the below example we will use more then two statments by using else if method.
 
@@ -313,8 +312,6 @@
 
 // if condition will be true then true output will work and if condition will be false then false output will works.
 
-// ===============================================================================================
-
 // let age = prompt("Enter Age to Check Age")
 
 // let result =  age >= 18 ? "adult" : "not adult";
@@ -332,7 +329,7 @@
 // let Result = num %5 ===  0 ? `multiple of 5`: `not a multiple of 5`;
 // console.log(Result);
 
-// ===============================================================================================
+// Example:
 
 // let num =  prompt("enter the number");
 
@@ -342,7 +339,7 @@
 // console.log(num , "is not multiple of 5")
 // };
 
-// ===============================================================================================
+// Example:
 
 // let mode = "white";
 
@@ -360,7 +357,7 @@
 
 // console.log(color);
 
-// ===============================================================================================
+// Example:
 
 // let score = Number(prompt("Enter Num to check grade (0-100)"));
 
@@ -380,7 +377,8 @@
 
 // console.log( "According to your scores, your grade is :", grade);
 
-// ==========================================================================================================
+
+// =======================================================================================================
 
 // loops  →  loops are used to execute the piece of code again & again.
 
@@ -447,7 +445,7 @@
 
 // do-while → at least 1 baar chalega syntax given below
 
-// let i = 1;
+// let i = 10;          yaha per condition false hy "10" bara hy condition (i <=5) phir bhe one time run ho ga q k condition bad main check ho rahi hy or code first excute ho raha hy.
 // do {
 //     console.log(`mani ${i}`);
 //     i ++;
@@ -511,8 +509,8 @@
 
 //     //  console.log( value , studentObject[value]);
 
-//        let a = `i = ${value} value = ${studentObject[value]}`;
-//         console.log(a);
+    //    let a = `${value}  ${studentObject[value]}`;
+    //     console.log(a);
 // }
 
 // ==========================================================================================================
@@ -593,11 +591,17 @@
 
 // console.log ("usman\tghani");
 
-// (String method in javascript proogramming language)
+
+
+// ==========================================================================================================
+
+
+
+// (String method in javascript programming language)
 
 // (These are built-in functions to manipulate a string)
 
-// (note= string changed with upper and lower case method always called a new string ) (it means string is mutable---> not changeable )
+// (note= string changed with upper and lower case method always called a new string ) (it means string is immutable---> not changeable )
 
 // 1.str.toUpperCase () (this method is used to convert string letter to upper case)
 
@@ -614,7 +618,7 @@
 // let str = "                USMAN            GHANI                   ";
 // console.log(str.trim());
 
-// str.trim method will only remove space from start and from end.
+// str.trim() method will only remove space from start and from end.
 
 // let str = "usmanghani";
 // str.toUpperCase();
@@ -634,7 +638,7 @@
 //  str=str.toUpperCase();
 // console.log(str);
 
-// now above string have been changed but it is not a right method
+// now above string have been changed but it is not a right method.
 
 // 4. str.slice(start, end) (start or end main string ki value add kairn or jo part specific chahey laylain)
 
@@ -660,7 +664,9 @@
 
 // let name = "usman"
 
-// console.log(name.replace("us","no"));
+// let newName = (name.replace("us","no"));
+// console.log(newName);
+
 
 // let name = "usmanghani";
 // console.log(name.replaceAll("a","b"));
@@ -915,7 +921,7 @@
 // console.log(val);
 // console.log(sum(3,4));
 
-// ========================================================================================================
+// ==================================================================================================
 
 // Arrow function is a compact method of function ===================================================
 // arrow function of variable main assign krna. arrow function is a part of modern part of java script.
@@ -1562,7 +1568,7 @@
 
 // classes in javaScript.(Class is a program-code template for creating objects.)
 // classes basically aik object ko banany ka template dati hain.
-// example agr aik company hy or us main 50 employee hian or her aik ka salary package bhe ho ga or email,phoneNum,address or name etc to kia hum 50 object banay ya aik template banaien ofcourse template is better.
+// example agr aik company hy or us main 50 employee hian or her aik ka salary package bhe ho ga or email,phoneNum,address or name etc to kia hum 50 object banay gy? aik template banaien ofcourse template is better.
 
 // class aik object k ley aik bluePrint hoti hy.
 
@@ -1599,19 +1605,15 @@
 
 // =======================================================================================================
 
+// Constructor in JS: is a function that helps create multiple objects with same structure 
+
 // constructor (automatically created by javaSript)
 
-// constructor()method is:
-
-// automatically invoked by new
-
-// initializes object
+// constructor()method is: automatically invoked by new initializes object
 
 // let obj = new myClass ();    (is main jo new keyword hy wo create kary ga object main constructor or hum custom constructor bhe create kr sakty hain. )
 
-// Use of constructor = jub hum kisi object k initialize main koi kam karna ho matlab start main.
-
-// constructor hota method hy
+// Use of constructor = jub hum kisi object k initialize main koi kam karna ho matlab start main to constructor hota method hy.
 
 // class toyotaCar {
 //     constructor(){
@@ -1675,7 +1677,7 @@
 
 // class parrent{
 //     hello(){
-//         console.log(`hellp`);
+//         console.log(`hello`);
 //     }
 // }
 
